@@ -1,15 +1,27 @@
 <template>
-  <component :is="layout">
-    <router-view />
-  </component>
+  <div>
+    <component :is="layout">
+      <router-view />
+    </component>
+  </div>
 </template>
 
 <script setup>
+
+</script>
+
+<script>
 import EmptyLayout from './layouts/EmptyLayout.vue'
 import MainLayout from './layouts/MainLayout.vue'
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
-const route = useRoute()
-
-const layout = computed (() => (route.meta.layout || 'empty') + '-layout')
+export default {
+  components: {
+    EmptyLayout,
+    MainLayout
+  },
+  computed: {
+    layout () {
+      return (this.$route.meta.layout || 'empty') + '-layout'
+    }
+  }
+}
 </script>

@@ -16,13 +16,13 @@ const routes = [
   {
     path: '/createTask',
     name: 'CreateTask',
-    meta: { layout: 'empty' },
+    meta: { layout: 'main' },
     component: () => import('../pages/tasks/createTask.vue'),
   },
   {
     path: '/updateTask',
     name: 'UpdateTask',
-    meta: { layout: 'empty' },
+    meta: { layout: 'main' },
     component: () => import('../pages/tasks/updateTask.vue'),
   },
   {
@@ -30,6 +30,18 @@ const routes = [
     name: 'Statistics',
     meta: { layout: 'main' },
     component: () => import('../pages/statistics/index.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    meta: { layout: 'main' },
+    component: () => import('../pages/auth/login.vue')
+  },
+  {
+    path: '/registration',
+    name: 'Registration',
+    meta: { layout: 'main' },
+    component: () => import('../pages/auth/registration.vue')
   }
 ]
 

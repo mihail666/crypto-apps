@@ -1,0 +1,16 @@
+.navbutton {
+  background: none;
+  /* background: linear-gradient(90deg, #ffffff42 0%, #00000085 97.15%); */
+  border-radius: 6px;
+  transition: ease-out 0.5s;
+  border: 1px solid #000;
+}
+
+.navbutton:hover {
+  background: #00000085;
+}
+
+.navbutton:focus {
+  background: #00000054;
+  /* background: linear-gradient(-90deg, #00000085 10%, #ffffff7e 97.15%); */
+}

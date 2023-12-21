@@ -1,5 +1,7 @@
 <template>
-  <div>task</div>
+  <div>
+    <h1 class="text-3xl font-bold">Task</h1>
+  </div>
 </template>
 
 <script setup></script>

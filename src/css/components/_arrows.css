@@ -1,0 +1,87 @@
+.arrowOne {
+  position: absolute;
+  bottom: 37%;
+  left: 0px;
+  background-image: url('/images/Banner/arrowOne.svg');
+  width: 105px;
+  height: 59px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowTwo {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  background-image: url('/images/Banner/arrowTwo.svg');
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowThree {
+  position: absolute;
+  background-image: url('/images/Banner/arrowThree.svg');
+  top: 32%;
+  left: 53%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowFour {
+  position: absolute;
+  background-image: url('/images/Banner/arrowFour.svg');
+  top: 48%;
+  left: 46%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowFive {
+  position: absolute;
+  background-image: url('/images/Banner/arrowFive.svg');
+  top: 61%;
+  left: 53%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowSix {
+  position: absolute;
+  background-image: url('/images/Banner/arrowSix.svg');
+  top: 39%;
+  left: 80%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowSeven {
+  position: absolute;
+  background-image: url('/images/Banner/arrowSeven.svg');
+  top: 57%;
+  left: 79%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.arrowEight {
+  position: absolute;
+  background-image: url('/images/Banner/arrowEight.svg');
+  top: 57%;
+  right: 0%;
+  width: 9%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

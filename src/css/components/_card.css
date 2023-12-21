@@ -1,0 +1,29 @@
+.card-b {
+  background: #0c1b44;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+  transition: transform 430ms;
+  height: 258px;
+}
+
+.card-b:hover {
+  filter: drop-shadow(0px 20px 5px rgba(0, 0, 0, 0.1));
+  transform: scale(1.05);
+  border: 1px solid #bd24df;
+  height: 360px;
+}
+
+.hides {
+  display: none;
+}
+
+.card-b:hover > .hides {
+  display: block;
+}
+
+.work-img-bg {
+  background: linear-gradient(90deg, #bd24df 0%, #2d6ade 97.15%);
+  top: -51px;
+  right: 40%;
+}

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    {
+      "type": "home",
+      "routeName": "/",
+      "title": "Home",
+      "url": "/",
+      "icon": "ri-home-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "tasks",
+      "routeName": "tasks",
+      "title": "Tasks page",
+      "url": "/tasks",
+      "icon": "ri-task-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "tasks",
+      "routeName": "createTask",
+      "title": "Create Task",
+      "url": "/createTask",
+      "icon": "ri-chat-new-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "tasks",
+      "routeName": "updateTask",
+      "title": "Update Task",
+      "url": "/updateTask",
+      "icon": "ri-loop-left-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "statistics",
+      "routeName": "statistics",
+      "title": "Statistics",
+      "url": "/statistics",
+      "icon": "ri-line-chart-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "auth",
+      "routeName": "login",
+      "title": "Login",
+      "url": "/login",
+      "icon": "ri-login-circle-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    },
+    {
+      "type": "auth",
+      "routeName": "registration",
+      "title": "Registration",
+      "url": "/registration",
+      "icon": "ri-registered-line",
+      "enableChips": false,
+      "displayOnSidebar": true
+    }
+  ]
+}
