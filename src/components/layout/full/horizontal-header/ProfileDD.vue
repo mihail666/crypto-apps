@@ -2,14 +2,14 @@
   <button
     type="button"
     @click="showMenu = !showMenu"
-    class="relative flex rounded-lg bg-gray-800 text-sm hover:invert focus:invert"
+    class="relative flex rounded-lg bg-gray-800 text-sm focus:text-current"
     id="user-menu-button"
     aria-expanded="false"
     aria-haspopup="true"
   >
     <span class="absolute"></span>
     <span class="sr-only">Open user menu</span>
-    <i class="ri-user-line text-4xl text-current"></i>
+    <i class="ri-user-line text-2xl text-current/60 hover:text-current "></i>
   </button>
   <div
     @mouseleave="showMenu = false"

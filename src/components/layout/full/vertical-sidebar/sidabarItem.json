@@ -28,15 +28,6 @@
       "displayOnSidebar": true
     },
     {
-      "type": "tasks",
-      "routeName": "updateTask",
-      "title": "Update Task",
-      "url": "/updateTask",
-      "icon": "ri-loop-left-line",
-      "enableChips": false,
-      "displayOnSidebar": true
-    },
-    {
       "type": "statistics",
       "routeName": "statistics",
       "title": "Statistics",

@@ -20,7 +20,7 @@ const routes = [
     component: () => import('../pages/tasks/createTask.vue'),
   },
   {
-    path: '/updateTask',
+    path: '/updateTask/:date',
     name: 'UpdateTask',
     meta: { layout: 'main' },
     component: () => import('../pages/tasks/updateTask.vue'),

@@ -4,8 +4,17 @@ export const useUserStore = defineStore('user', {
   state: () => ({
     isSideOverlay: false,
     isLoading: false,
-    tasks: [],
-    checkoutTasks: [],
+    data: {
+      tasks: []
+    },
   }),
-  persist: true
+  actions: {
+    updateData(partialData) {
+      this.data = {
+        ...this.data,
+        ...partialData,
+      }
+    },
+  },
+  persist: true,
 })

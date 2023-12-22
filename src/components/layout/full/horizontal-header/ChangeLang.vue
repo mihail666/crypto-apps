@@ -3,19 +3,19 @@
     type="button"
     @click="showMenu = !showMenu"
     
-    class="relative flex rounded-lg bg-gray-800 text-sm hover:invert focus:invert"
+    class="relative flex rounded-lg bg-gray-800 text-sm text-current/60 hover:text-current focus:text-current"
     id="user-menu-button"
     aria-expanded="false"
     aria-haspopup="true"
   >
     <span class="absolute -inset-.5"></span>
     <span class="sr-only">Open lang menu</span>
-    <i class="ri-earth-fill text-4xl text-current"></i>
+    <i class="ri-earth-fill text-2xl text-current/60 hover:text-current focus:text-current "></i>
   </button>
   <div
     @mouseleave="showMenu = false"
     v-show="showMenu"
-    class="absolute left-10 top-10 z-20 mt-2 w-18 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+    class="absolute left-7 top-10 z-20 mt-2 w-18 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
     role="menu"
     aria-orientation="vertical"
     aria-labelledby="user-menu-button"
@@ -28,7 +28,7 @@
       role="menuitem"
       id="user-menu-item-0"
       @click="!showMenu"
-      ><i class="ri-earth-fill text-4xl text-current"></i></a
+      ><i class="ri-earth-fill text-2xl text-current"></i></a
     >
     <a
       href="#"
@@ -36,7 +36,7 @@
       role="menuitem"
       id="user-menu-item-1"
       @click="!showMenu"
-      ><i class="ri-earth-fill text-4xl text-current"></i></a
+      ><i class="ri-earth-fill text-2xl text-current"></i></a
     >
     <a
       href="#"
@@ -44,7 +44,7 @@
       role="menuitem"
       id="user-menu-item-2"
       @click="!showMenu"
-      ><i class="ri-earth-fill text-4xl text-current"></i></a
+      ><i class="ri-earth-fill text-2xl text-current"></i></a
     >
   </div>
 </template>

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="mx-auto max-w-7xl mt-16 px-6 mb-20 relative">
-      <div class="radial-bgone hidden lg:block"></div>
+    <div class="mx-auto max-w-7xl mt-16 px-6 mb-20 relative box-border">
+      <div class="radial-bgone hidden overflow-x-hidden">
+        
+      </div>
       <div class="text-center mb-14">
         <h1 class="text-offwhite text-3xl md:text-5xl font-bold mb-3">
           How it work
@@ -24,7 +26,7 @@
             >
               <img
                 :src="`${item.imgSrc}`"
-                alt="../../../public/images/Work/icon-one.svg"
+                :alt="`${item.imgSrc}`"
                 width="{44}"
                 height="{44}"
               />

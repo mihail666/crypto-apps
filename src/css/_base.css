@@ -18,8 +18,8 @@ p, span, a {
   
   margin-top: 60px;
   transition: ease-out .2s;
-
   margin-right: auto;
+  padding: 2rem 2rem 2rem 1.5rem;
 }
 
 .app-content {

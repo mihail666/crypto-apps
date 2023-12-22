@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pinia-plugin-persistedstate": "^3.2.1",
     "register-service-worker": "^1.7.2",
     "remixicon": "^4.0.1",
     "vue": "^3.3.11",
