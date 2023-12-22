@@ -1,18 +1,14 @@
 <template>
-  <div class="pt-10">
+  <div>
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
       <div class="sm:mx-auto sm:w-full sm:max-w-sm">
         <NavLogo />
-        <h1
-          class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white/90"
-        >
-          Create your 
-          account
+        <h1 class="mt-1 text-center text-2xl font-semibold text-current/90">
+          Create your account
         </h1>
       </div>
 
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        
         <RegisterForm />
 
         <p class="mt-10 text-center text-md text-current">
@@ -33,5 +29,4 @@
 <script setup>
 import RegisterForm from '../../components/auth/RegisterForm.vue'
 import NavLogo from '../../components/layout/full/logo/NavLogo.vue'
-
 </script>

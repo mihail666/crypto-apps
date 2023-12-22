@@ -9,7 +9,7 @@
   >
     <span class="absolute"></span>
     <span class="sr-only">Open user menu</span>
-    <i class="ri-user-line text-2xl text-current/60 hover:text-current "></i>
+    <i class="ri-user-line text-2xl text-current/60 hover:text-current"></i>
   </button>
   <div
     @mouseleave="showMenu = false"

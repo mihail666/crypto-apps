@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="mx-auto max-w-7xl mt-16 px-6 mb-20 relative box-border">
-      <div class="radial-bgone hidden overflow-x-hidden">
-        
-      </div>
+      <div class="radial-bgone hidden overflow-x-hidden"></div>
       <div class="text-center mb-14">
         <h1 class="text-offwhite text-3xl md:text-5xl font-bold mb-3">
           How it work
@@ -32,8 +30,12 @@
               />
             </div>
             <div>
-              <img src="/images/Work/bg-arrow.svg" alt="arrow-bg" width={85}
-              height={35} />
+              <img
+                src="/images/Work/bg-arrow.svg"
+                alt="arrow-bg"
+                width="{85}"
+                height="{35}"
+              />
             </div>
             <h3 class="text-2xl text-offwhite font-semibold text-center mt-8">
               {{ item.heading }}

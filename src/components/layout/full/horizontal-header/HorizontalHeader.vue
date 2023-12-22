@@ -1,6 +1,6 @@
 <template>
   <div
-    class="header bg-black p-2 flex items-center justify-between"
+    class="header bg-current/10 p-2 flex items-center justify-between"
     :class="{ full: userStor.isSideOverlay }"
   >
     <div class="ml-2 pt-1">
@@ -25,8 +25,8 @@
 
 <script setup>
 import ProfileDD from './ProfileDD.vue'
-import ChangeLang from './ChangeLang.vue';
-import ChangeTheme from './ChangeTheme.vue';
+import ChangeLang from './ChangeLang.vue'
+import ChangeTheme from './ChangeTheme.vue'
 import { useUserStore } from '../../../../store/appState'
 const userStor = useUserStore()
 </script>

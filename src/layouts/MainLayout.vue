@@ -4,11 +4,11 @@
     <div class="relative">
       <Sidebar />
       <HeaderBar />
-      <main class="app-content">
-        <div
-          class="page-wrapper"
-          :class="{ full: userStor.isSideOverlay }"
-        >
+      <main
+        class="app-content"
+        :class="{ appFull: userStor.isSideOverlay }"
+      >
+        <div class="page-wrapper">
           <div class="container">
             <RouterView />
           </div>
@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-import Sidebar from '../components/layout/full/vertical-sidebar/sidebar.vue'
-import HeaderBar from '../components/layout/full/horizontal-header/Header.vue'
+import Sidebar from '../components/layout/full/vertical-sidebar/VerticalSidebar.vue'
+import HeaderBar from '../components/layout/full/horizontal-header/HorizontalHeader.vue'
 import { useUserStore } from '../store/appState'
 const userStor = useUserStore()
 </script>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
 @import './_override.css';
 @import './_base.css';
 @import './_scrollBar.css';
@@ -12,10 +12,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-
 
 /* Table Section */
 

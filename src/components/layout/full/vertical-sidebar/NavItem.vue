@@ -7,7 +7,10 @@
     class="flex navbutton items-center w-full p-3 mt-2"
   >
     <div class="grid place-items-center mr-2">
-      <i class="text-xl text-current" :class="item.icon"></i>
+      <i
+        class="text-xl text-current"
+        :class="item.icon"
+      ></i>
     </div>
     <p class="text-md text-current">{{ item.title }}</p>
   </router-link>

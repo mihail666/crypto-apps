@@ -1,6 +1,6 @@
 <template>
   <form
-    @submit.prevent="createTask"
+    @submit.prevent="updateTask"
     class="space-y-6 sm:w-[100%] md:w-[350px]"
     action="#"
     method="POST"
@@ -101,44 +101,59 @@
         type="submit"
         class="navbutton flex w-100 justify-center mx-auto rounded-md px-4 py-0 font-semibold leading-6 text-current shadow-sm"
       >
-        <h1 class="text-sm text-white/90">Create task</h1>
+        <h1 class="text-sm text-white/90">update task</h1>
       </button>
     </div>
   </form>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+<script>
+import { computed, ref, watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
 import { useUserStore } from '../../store/appState'
-const userStor = useUserStore()
+export default {
+  setup() {
+    const userStor = useUserStore()
+    const route = useRoute()
 
-let title = ref('')
-let busyness = ref('')
-let formatWork = ref('')
-let salary = ref('')
-let message = ref('')
+    let title = ref('')
+    let busyness = ref('')
+    let formatWork = ref('')
+    let salary = ref('')
+    let message = ref('')
 
-const createTask = async () => {
-  const formData = {
-    title: title.value,
-    date: new Date(),
-    busyness: busyness.value,
-    formatWork: formatWork.value,
-    salary: salary.value,
-    message: message.value,
-    completed: false
-  }
+    const idTask = computed(() => route.params.date)
 
-  try {
-    userStor.data.tasks.push(formData)
-    title.value = '',
-    busyness.value = '',
-    formatWork.value = '',
-    salary.value = '',
-    message.value = ''
-    $emit('created')
-  } catch (e) {}
+    watchEffect(() => {
+      if (userStor.data.tasks.length) {
+        userStor.data.tasks.filter((t) => {
+          if (t.date == idTask.value) {
+            title.value = t.title
+            busyness.value = t.busyness
+            formatWork.value = t.formatWork
+            salary.value = t.salary
+            message.value = t.message
+          }
+        })
+      }
+    })
+
+    return { userStor, idTask, message, salary, formatWork, busyness, title }
+  },
+
+  methods: {
+    updateTask() {
+      this.userStor.data.tasks.map((task) => {
+        if (task.date == this.idTask) {
+          task.title = this.title
+          task.busyness = this.busyness
+          task.formatWork = this.formatWork
+          task.salary = this.salary
+          task.message = this.message
+        }
+      })
+      this.$router.push('/tasks')
+    },
+  },
 }
 </script>
-
-<style lang="scss" scoped></style>
