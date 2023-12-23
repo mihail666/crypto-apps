@@ -8,7 +8,7 @@
         class="app-content"
         :class="{ appFull: userStor.isSideOverlay }"
       >
-        <div class="page-wrapper">
+        <div class="">
           <div class="container">
             <RouterView />
           </div>

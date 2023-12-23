@@ -17,7 +17,7 @@
     </div>
 
     <div v-else>
-      <h1 class="text-3xl font-bold text-current">Task</h1>
+      <h1 class="text-center text-2xl font-semibold text-current/90">Task</h1>
       <template
         v-for="task in tasksComputed"
         :key="task"

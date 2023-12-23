@@ -25,8 +25,8 @@
               <img
                 :src="`${item.imgSrc}`"
                 :alt="`${item.imgSrc}`"
-                width="{44}"
-                height="{44}"
+                width="44"
+                height="44"
               />
             </div>
             <div>

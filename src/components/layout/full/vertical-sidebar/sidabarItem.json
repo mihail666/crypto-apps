@@ -12,7 +12,7 @@
     {
       "type": "tasks",
       "routeName": "tasks",
-      "title": "Tasks page",
+      "title": "Tasks",
       "url": "/tasks",
       "icon": "ri-task-line",
       "enableChips": false,
