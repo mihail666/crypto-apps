@@ -21,8 +21,8 @@
       </div>
     </div>
 
-    <div class="table-b bg-current/10 p-8 overflow-x-auto m-3">
-      <div class="flex justify-between">
+    <div class="table-b bg-current/10 p-8 overflow-x-auto m-3 tr">
+      <div class="flex justify-between tr">
         <h1 class="text-current text-xl">Tokens</h1>
         <TableFiters @filterEvent="filterFnc" />
       </div>
@@ -58,7 +58,10 @@ let tvlTokens = ref([])
 const filterFnc = (value) => {
   tokens.value = []
   fetchData.value.rows.forEach((t) => {
-    value >= t.tvlp ? tokens.value.push(t) : false
+    console.log(t.tvlp)
+    value <= t.tvlp
+      ? tokens.value.push(t)
+      : false
   })
 }
 

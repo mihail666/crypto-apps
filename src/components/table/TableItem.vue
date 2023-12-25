@@ -1,9 +1,9 @@
 <template>
   <tbody>
-    <tr class="border-b border-b-darkblue">
-      <td class="px-4 py-6 text-center text-white">{{ token.order }}</td>
+    <tr class="border-b border-b-darkblue tr">
+      <td class="px-4 py-6 text-center text-current">{{ token.order }}</td>
       <td
-        class="px-4 py-6 text-center text-white flex items-center justify-start gap-5"
+        class="px-4 py-6 text-center text-current flex items-center justify-start gap-5"
       >
         <img
           :src="`/images/Table/${token.nativeToken}.svg`"
@@ -12,9 +12,9 @@
           width="50"
         />{{ token.name }}
       </td>
-      <td class="px-4 py-6 text-center text-white">{{ token.nativeToken }}</td>
-      <td class="px-4 py-6 text-center text-white">{{ (token.tvl / 1000000).toFixed(2) }} B</td>
-      <td class="px-4 py-6 text-center text-white">{{ token.tvlp }}%</td>
+      <td class="px-4 py-6 text-center text-current">{{ token.nativeToken }}</td>
+      <td class="px-4 py-6 text-center text-current">{{ (token.tvl / 1000000).toFixed(2) }} B</td>
+      <td class="px-4 py-6 text-center text-current">{{ token.tvlp }}%</td>
     </tr>
   </tbody>
 </template>

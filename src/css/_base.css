@@ -39,6 +39,10 @@ appFull {
   filter: invert(1);
 }
 
+.tr {
+  transition: ease-out 0.2s;
+}
+
 /* Table Section */
 
 .table-b {

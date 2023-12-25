@@ -6,7 +6,7 @@
       id="filter-button"
       aria-expanded="false"
       aria-haspopup="true"
-      @click="(value = 100), $emit('filterEvent', value)"
+      @click="(value = 0), $emit('filterEvent', value)"
     >
       <span class="absolute"></span>
       <span class="sr-only">All</span>

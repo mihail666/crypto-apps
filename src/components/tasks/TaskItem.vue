@@ -1,23 +1,23 @@
 <template>
   <div
-    class="lg:flex lg:items-center lg:justify-between bg-current/30 mb-5 p-5 rounded-md"
+    class="lg:flex lg:items-center lg:justify-between bg-current/30 mb-5 p-5 rounded-md tr"
     :class="{ completed: task.completed }"
   >
     <div class="min-w-0 flex-1">
       <h2
-        class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight"
+        class="text-2xl font-bold leading-7 text-current sm:truncate sm:text-3xl sm:tracking-tight"
       >
         {{ task.title }}
       </h2>
-      <div class="w-[60%]">
+      <div class="w-[60%] text-current">
         <p>
           {{ task.message }}
         </p>
       </div>
       <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap">
-        <div class="mt-2 mr-4 flex items-center text-sm text-gray-500">
+        <div class="mt-2 mr-4 flex items-center text-sm text-current">
           <svg
-            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+            class="mr-1.5 h-5 w-5 flex-shrink-0 text-current/50"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -33,9 +33,9 @@
           </svg>
           {{ task.busyness }}
         </div>
-        <div class="mt-2 mr-4 flex items-center text-sm text-gray-500">
+        <div class="mt-2 mr-4 flex items-center text-sm text-current">
           <svg
-            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+            class="mr-1.5 h-5 w-5 flex-shrink-0 text-current/50"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -48,9 +48,9 @@
           </svg>
           {{ task.formatWork }}
         </div>
-        <div class="mt-2 mr-4 flex items-center text-sm text-gray-500">
+        <div class="mt-2 mr-4 flex items-center text-sm text-current">
           <svg
-            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+            class="mr-1.5 h-5 w-5 flex-shrink-0 text-current/50"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -66,9 +66,9 @@
           </svg>
           {{ task.salary }}
         </div>
-        <div class="mt-2 mr-4 flex items-center text-sm text-gray-500">
+        <div class="mt-2 mr-4 flex items-center text-sm text-current">
           <svg
-            class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+            class="mr-1.5 h-5 w-5 flex-shrink-0 text-current/50"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -85,28 +85,28 @@
     </div>
 
     <div class="mt-5 flex lg:ml-4 lg:mt-0">
-      <span class="hidden sm:block">
+      <span class="sm:ml-3">
         <button
           type="button"
           @click="$router.push('/updateTask/' + task.date)"
-          class="inline-flex items-center rounded-md bg-current/50 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-current/90"
+          class="inline-flex items-center rounded-md bg-current/50 px-3 py-2 text-sm font-semibold text-current shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-current/90"
         >
           <i class="ri-pencil-fill"></i>
         </button>
       </span>
 
-      <span class="ml-3 hidden sm:block">
+      <span class="ml-3">
         <button
           type="button"
           @click="$emit('removeTask', task)"
-          class="inline-flex items-center rounded-md bg-current/50 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red"
+          class="inline-flex items-center rounded-md bg-current/50 px-3 py-2 text-sm font-semibold text-current shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red"
         >
           <i class="ri-delete-bin-7-fill"></i>
         </button>
       </span>
 
       <span
-        class="sm:ml-3"
+        class="ml-3"
         v-show="task.completed"
       >
         <button
@@ -119,7 +119,7 @@
       </span>
 
       <span
-        class="sm:ml-3"
+        class="ml-3"
         v-show="!task.completed"
       >
         <button
@@ -132,17 +132,17 @@
       </span>
 
       <!-- Dropdown -->
-      <div class="relative ml-3 sm:hidden">
+      <!-- <div class="relative ml-3 sm:hidden">
         <button
           type="button"
-          class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400"
+          class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-current shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400"
           id="mobile-menu-button"
           aria-expanded="false"
           aria-haspopup="true"
         >
           More
           <svg
-            class="-mr-1 ml-1.5 h-5 w-5 text-gray-400"
+            class="-mr-1 ml-1.5 h-5 w-5 text-current/50"
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -161,9 +161,9 @@
           aria-orientation="vertical"
           aria-labelledby="mobile-menu-button"
           tabindex="-1"
-        >
+        > -->
           <!-- Active: "bg-gray-100", Not Active: "" -->
-          <a
+          <!-- <a
             href="#"
             class="block px-4 py-2 text-sm text-gray-700"
             role="menuitem"
@@ -178,9 +178,9 @@
             tabindex="-1"
             id="mobile-menu-item-1"
             >View</a
-          >
-        </div>
-      </div>
+          > -->
+        <!-- </div>
+      </div> -->
     </div>
   </div>
 </template>
