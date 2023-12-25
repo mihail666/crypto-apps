@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="!tasksComputed.length">
-      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm pt-12">
         <NavLogo />
         <h1 class="text-center text-2xl font-semibold text-current">
           not fond tasks <br />
